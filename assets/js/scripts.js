@@ -9,3 +9,20 @@
 // - Crea un botón en tu web que al pulsarlo genere un color aleatorio para el body y se aplique.
 
 // - Crea un div de 20px x 20px y sincronizalo con el movimiento del ratón, el div deberá quedarse pegado a la flecha de tu ratón y moverse junto a él.
+
+// Crea una función que reciba un número e imprima tantas vocales aleatorias como el número que le hayas pasado. Si el número es 5, te dará 5 vocales aleatorias.
+
+const numberElement = number =>{
+    let vowels = 'aeiou';
+    let result = '';
+    for (let i= 0; i< number - 1; i++){
+        result += vowels.charAt(Math.floor(Math.random()* number));
+        
+    }
+    console.log(result)
+}
+
+numberElement (6);
+
+
+
